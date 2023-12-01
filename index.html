@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title> Rock, Paper, Scissors</title>
+</head>
+
+<body class="preload">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>ROCK PAPER SCISSORS</h1>
+            </div>
+            <div class="a1">
+                <div class="score1">
+                    <div class="score1__title1">Computer score</div>
+                    <div class="score1__number1">0</div>
+                </div>
+                <div class="score">
+                    <div class="score__title">Your score</div>
+                    <div class="score__number">0</div>
+                </div>
+            </div>
+        </header>
+        <section class="game">
+            <button class="choice-btn ga" data-choice="paper">
+                <div class="choice paper">
+                    <img src="paper.svg" alt="Paper" />
+                </div>
+            </button>
+            <button class="choice-btn ga" data-choice="scissors">
+                <div class="choice scissors">
+                    <img src="scissors.svg" alt="Scissors" />
+                </div>
+            </button>
+            <button class="choice-btn ga" data-choice="rock">
+                <div class="choice rock">
+                    <img src="rock.svg" alt="Rock" />
+                </div>
+            </button>
+        </section>
+    </div>
+
+    <section class="results hidden">
+        <h2 class="results__heading">you picked</h2>
+        <h2 class="results__heading">PC picked</h2>
+        <div class="results__result"></div>
+        <div class="results__winner hidden">
+            <h3 class="results__text"></h3>
+            <button class="play-again">play again</button>
+        </div>
+        <div class="results__result"></div>
+    </section>
+    <button class="next-btn hidden" tabindex="2">next</button>
+    <button class="rules-btn" tabindex="1">rules</button>
+    <div class="modal">
+        <div class="modal__container">
+            <header class="modal__header">
+                <button class="close-btn">
+                    <img src="X.png" alt="close" class="close1">
+
+                </button>
+            </header>
+            <img src="rules.png" alt="Rules Image" class="rules-img" />
+        </div>
+    </div>
+</body>
+
+</html>
